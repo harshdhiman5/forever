@@ -9,7 +9,7 @@ export default function Collection() {
 
     // Fetch all products
     useEffect(() => {
-        fetch("http://localhost:5000/api/products")
+        fetch("https://forever-backend-lplg.onrender.com/api/products")
             .then((res) => res.json())
             .then((data) => {
                 setProducts(data);
