@@ -5,7 +5,7 @@ export default function BestSeller() {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/products")
+        fetch("https://forever-backend-lplg.onrender.com/api/products")
             .then(res => res.json())
             .then(data => setProducts(data))
             .catch(err => console.error("Error fetching products:", err));
